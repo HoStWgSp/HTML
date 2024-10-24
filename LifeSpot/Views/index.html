@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>LifeSpot</title>
-    <style>
+    <!--Подключение стилей по относительному пути из внешнего файла-->
+    <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css">
+    <!-- <style>
         /* Свойства стиля элемента. Подробнее о них - в модуле по CSS */
         .bordered {
             border: 2px solid black;
@@ -39,28 +41,30 @@
         body{
             padding-left: 11%;
         }
-    </style>
+    </style> -->
 </head><!--Хедер страницы находится сразу над тегом body-->
 <header class="header">
-   <!--Заголовок страницы-->
-   <h1>LifeSpot - прямые трансляции с улиц</h1>
-   <!--Параграф-->
-   <p>Покажем, что происходит прямо сейчас</p>
+    <nav>
+        <a href="#Food">Продукты</a>
+        <a href="#Household">Хозтовары</a>
+        <a href="#Vet">Для кролика</a>
+        <a href="#Service">Сервис</a>
+        </nav>
 </header>
 <body class="body">
     <div class="bordered">
        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/srlpC5tmhYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="iframe" src="https://www.youtube.com/embed/srlpC5tmhYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <h3 class="video-title">Нью-Йорк, Брайант Парк</h3>
         </div>
         <div class="video-container">
             <!--Санкт-Петербург-->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/wCcMcaiRbhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="iframe" src="https://www.youtube.com/embed/wCcMcaiRbhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <h3 class="video-title">Санкт-Петербург, Невский Проспект</h3>
         </div>
         <div class="video-container">
             <!--Лондон-->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/JplMzss6_YE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="iframe" src="https://www.youtube.com/embed/JplMzss6_YE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <h3 class="video-title">Лондон, автобусный маршрут</h3>
             </div>
         </div>
